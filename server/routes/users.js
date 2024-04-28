@@ -7,6 +7,7 @@ var router = express.Router();
 router.post('/chat', async function(req, res, next) {
   const {history} = req.body;
   const question = req.body.message
+  
 
   const {
     GoogleGenerativeAI,
